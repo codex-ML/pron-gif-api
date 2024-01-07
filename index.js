@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 const NodeCache = require('node-cache');
 const app = express();
 const port = 3000;
-
+const PORT = process.env.PORT || 3000;
 const cache = new NodeCache({ stdTTL: 600 }); // Cache TTL set to 10 minutes
 
 const headers = {
